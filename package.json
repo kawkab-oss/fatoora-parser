@@ -2,7 +2,8 @@
   "name": "@kawkab-oss/fatoora-parser",
   "version": "1.0.2",
   "description": "parse fatoora base64 to JSON",
-  "main": "index.js",
+  "main": "www/index.js",
+  "types": "www/index.d.ts",
   "scripts": {
     "serve": "npx nodemon -x ts-node -e ts src",
     "build": "tsc",
@@ -13,6 +14,12 @@
   "keywords": [
     "fatoora",
     "parser"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "www/**/*"
   ],
   "author": "Asim M Al Twijry عاصم التويجري",
   "license": "ISC",
