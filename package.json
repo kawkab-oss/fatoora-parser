@@ -1,5 +1,5 @@
 {
-  "name": "fatoora-parser",
+  "name": "@kawkab-oss/fatoora-parser",
   "version": "1.0.1",
   "description": "parse fatoora base64 to JSON",
   "main": "index.js",
