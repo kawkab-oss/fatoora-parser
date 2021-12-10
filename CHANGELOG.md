@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.5](https://github.com/kawkab-oss/fatoora-parser/compare/v1.0.4...v1.0.5) (2021-12-10)
+
+
+### Bug Fixes
+
+* **node-tlv:** use @kawkab-oss/node-tlv to support browsers ([3ab1b8e](https://github.com/kawkab-oss/fatoora-parser/commit/3ab1b8e5126a8ca7c9f40e25cea0cdad9e8c1045))
+
 ### [1.0.4](https://github.com/kawkab-oss/fatoora-parser/compare/v1.0.3...v1.0.4) (2021-12-10)
 
 
