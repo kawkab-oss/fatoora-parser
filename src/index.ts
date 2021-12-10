@@ -1,5 +1,5 @@
-const TLV = require('node-tlv');
-var binary = require('bops')
+const TLV = require('@kawkab-oss/node-tlv');
+const Buffer = require('buffer/').Buffer;  // note: the trailing slash is important!
 
 export interface FatooraTags {
     sellerName: {
@@ -41,7 +41,7 @@ export function toJson(base64String: string): FatooraTags {
             // parse hex to string & map values to the object.
             const tagIndex = fatooraAsJson[k].tag;
             const tagType = typeof fatooraAsJson[k].value;
-            const value = binary.from(listOfHex[tagIndex].getValue(), 'hex').toString('utf-8');
+            const value = Buffer.from(listOfHex[tagIndex].getValue(), 'hex').toString('utf-8');
             fatooraAsJson[k].value = parseValue(tagType, value);
 
         })
