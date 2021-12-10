@@ -39,5 +39,9 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/kawkab-oss/fatoora-parser/issues"
+  },
+  "homepage": "https://github.com/kawkab-oss/fatoora-parser"
 }
