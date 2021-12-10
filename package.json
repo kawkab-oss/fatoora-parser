@@ -1,6 +1,6 @@
 {
   "name": "fatoora-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "parse fatoora base64 to JSON",
   "main": "index.js",
   "scripts": {
