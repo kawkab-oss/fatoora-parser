@@ -1,4 +1,5 @@
 const TLV = require('node-tlv');
+var binary = require('bops')
 
 export interface FatooraTags {
     sellerName: {
@@ -40,7 +41,7 @@ export function toJson(base64String: string): FatooraTags {
             // parse hex to string & map values to the object.
             const tagIndex = fatooraAsJson[k].tag;
             const tagType = typeof fatooraAsJson[k].value;
-            const value = Buffer.from(listOfHex[tagIndex].getValue(), 'hex').toString('utf-8');
+            const value = binary.from(listOfHex[tagIndex].getValue(), 'hex').toString('utf-8');
             fatooraAsJson[k].value = parseValue(tagType, value);
 
         })
