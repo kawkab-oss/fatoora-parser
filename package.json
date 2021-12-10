@@ -1,0 +1,43 @@
+{
+  "name": "fatoora-parser",
+  "version": "1.0.0",
+  "description": "parse fatoora base64 to JSON",
+  "main": "index.js",
+  "scripts": {
+    "serve": "npx nodemon -x ts-node -e ts src",
+    "build": "tsc",
+    "test": "tsc && jest",
+    "commit": "git cz",
+    "release": "standard-version"
+  },
+  "keywords": [
+    "fatoora",
+    "parser"
+  ],
+  "author": "Asim M Al Twijry عاصم التويجري",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-typescript": "^7.16.0",
+    "@types/jest": "^27.0.3",
+    "@types/node": "^16.11.12",
+    "babel-jest": "^27.4.4",
+    "commitizen": "4.2.4",
+    "cz-conventional-changelog": "3.3.0",
+    "extract-changelog-release": "^1.0.2",
+    "init": "0.1.2",
+    "jest": "^27.4.4",
+    "standard-version": "^9.3.2",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.3"
+  },
+  "dependencies": {
+    "node-tlv": "^1.5.14"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}
